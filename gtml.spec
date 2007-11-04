@@ -1,13 +1,13 @@
 %define	name	gtml
 %define	version	3.5.4
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 Summary:	An html preprocessor 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
-License:	GPL
+License:	GPLv2+
 URL:		http://www.lifl.fr/~beaufils/gtml/
 Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,0755)
-%doc README src/NEWS.gtm gtml.html COPYING NEWS.html CREDITS.html  
+%doc README src/NEWS.gtm gtml.html NEWS.html CREDITS.html  
 %{_bindir}/*
 
 
