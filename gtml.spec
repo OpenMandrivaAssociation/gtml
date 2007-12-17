@@ -10,7 +10,6 @@ Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv2+
 URL:		http://www.lifl.fr/~beaufils/gtml/
 Group:		Text tools
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 Buildarch:	noarch
 
 %description
