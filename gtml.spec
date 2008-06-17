@@ -1,6 +1,6 @@
 %define	name	gtml
 %define	version	3.5.4
-%define	release	%mkrel 3
+%define	release	%mkrel 4
 
 Summary:	An html preprocessor 
 Name:		%{name}
