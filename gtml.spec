@@ -30,11 +30,11 @@ irectories to generate different versions of your site.
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -m 755 %{name} -D $RPM_BUILD_ROOT%{_bindir}/%{name}
+rm -rf %{buildroot}
+install -m 755 %{name} -D %{buildroot}%{_bindir}/%{name}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,0755)
