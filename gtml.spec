@@ -1,6 +1,6 @@
 %define	name	gtml
 %define	version	3.5.4
-%define	release	%mkrel 8
+%define	release	%mkrel 10
 
 Summary:	An html preprocessor 
 Name:		%{name}
@@ -30,15 +30,54 @@ irectories to generate different versions of your site.
 %build
 
 %install
-rm -rf %{buildroot}
-install -m 755 %{name} -D %{buildroot}%{_bindir}/%{name}
+rm -rf $RPM_BUILD_ROOT
+install -m 755 %{name} -D $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,0755)
 %doc README src/NEWS.gtm gtml.html NEWS.html CREDITS.html  
 %{_bindir}/*
 
+
+
+
+%changelog
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 3.5.4-8mdv2011.0
++ Revision: 664960
+- mass rebuild
+
+* Thu Dec 02 2010 Oden Eriksson <oeriksson@mandriva.com> 3.5.4-7mdv2011.0
++ Revision: 605514
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 3.5.4-6mdv2010.1
++ Revision: 522814
+- rebuilt for 2010.1
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 3.5.4-5mdv2010.0
++ Revision: 425080
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 3.5.4-4mdv2009.0
++ Revision: 221120
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Nov 04 2007 Adam Williamson <awilliamson@mandriva.org> 3.5.4-3mdv2008.1
++ Revision: 105691
+- rebuild for 2008.1
+- don't package COPYING
+- new license policy
+
+
+* Thu Nov 23 2006 Lenny Cartier <lenny@mandriva.com> 3.5.4-2mdv2007.0
++ Revision: 86612
+- Mkrel
+- Import gtml
 
