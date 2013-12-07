@@ -1,7 +1,7 @@
 Summary:	An html preprocessor 
 Name:		gtml
 Version:	3.5.4
-Release:	13
+Release:	14
 License:	GPLv2+
 Group:		Text tools
 Url:		http://www.lifl.fr/~beaufils/gtml/
