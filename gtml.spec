@@ -4,7 +4,7 @@ Version:	3.5.4
 Release:	20
 License:	GPLv2+
 Group:		Text tools
-Url:		http://www.lifl.fr/~beaufils/gtml/
+Url:		https://www.lifl.fr/~beaufils/gtml/
 Source0:	%{name}-%{version}.tar.bz2
 Buildarch:	noarch
 
